@@ -1,0 +1,19 @@
+$red: #ff4545;
+$yellow: #ffff66;
+
+.error {
+  margin-top: 5px;
+  font-weight: 400;
+  color: $red;
+  font-size: 0.75vw;
+}
+.quality_error {
+  position: absolute;
+  width: fit-content;
+  right: 0;
+  top: 20px;
+  margin-top: 5px;
+  font-weight: 400;
+  font-size: 0.75vw;
+  color: $yellow;
+}

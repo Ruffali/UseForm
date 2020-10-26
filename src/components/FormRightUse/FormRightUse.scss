@@ -1,0 +1,100 @@
+$background: #374960;
+$white: #ffffff;
+$gray: #bebebe7e;
+$red: #ff4545;
+$yellow: #ffff66;
+
+$blue: #294574;
+$green: #6cdac7;
+
+.form_right_use {
+  width: calc(100% / 2);
+  background-color: #537895;
+  background-image: linear-gradient(315deg, #537895 0%, #09203f 74%);
+  padding: 100px 50px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  .top {
+    font-size: 2vw;
+    margin-bottom: 50px;
+    color: $white;
+  }
+  form {
+    .form-group {
+      position: relative;
+      label {
+        color: #ffffff;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin-top: 15px;
+        font-size: 0.7vw;
+        display: block;
+      }
+      .input {
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid #bebebe;
+        width: 100%;
+        height: 35px;
+        line-height: 35px;
+        color: white;
+        transition: all linear 0.3s;
+        cursor: pointer;
+        &::placeholder {
+          color: $gray;
+        }
+        &:focus {
+          outline: none;
+          box-shadow: none;
+          border-bottom-color: $white;
+        }
+      }
+
+      .error {
+        margin-top: 5px;
+        font-weight: 400;
+        color: $red;
+        font-size: 0.75vw;
+      }
+    }
+    .submit {
+      border-radius: 20px;
+      height: 40px;
+      width: 200px;
+      text-align: center;
+      color: $white;
+      background: $blue;
+      margin-top: 25px;
+      border: none;
+      cursor: pointer;
+      font-size: 15px;
+      border: 1px solid transparent;
+      transition: all linear 0.2s;
+      &:focus {
+        outline: none;
+        box-shadow: none;
+      }
+      &:hover {
+        background: transparent;
+        border-color: $green;
+        color: $green;
+      }
+    }
+    .disabled {
+      border-radius: 20px;
+      height: 40px;
+      width: 200px;
+      text-align: center;
+      color: $white;
+      background: $blue;
+      margin-top: 25px;
+      border: none;
+      opacity: 0.5;
+      font-size: 15px;
+      &:focus {
+        outline: none;
+        box-shadow: none;
+      }
+    }
+  }
+}

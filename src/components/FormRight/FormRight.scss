@@ -1,0 +1,21 @@
+$background: #374960;
+$white: #ffffff;
+
+.form_right {
+  width: calc(100% / 2);
+  background-color: #537895;
+  background-image: linear-gradient(315deg, #537895 0%, #09203f 74%);
+  padding: 100px 50px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  .top {
+    font-size: 2vw;
+    margin-bottom: 50px;
+    color: $white;
+  }
+  form {
+    .form-group {
+      position: relative;
+    }
+  }
+}
